@@ -11,6 +11,7 @@
     --accent: #ff9a62;
     --white: #ffffff;
     --gray: rgb(241, 239, 239);
+    --textGray: rgb(87, 87, 87);
 }
 
 .heropage{
@@ -82,7 +83,7 @@ nav ul li a:hover{
 }
 
 
-/* main hero page styling */
+/*----------- main hero page styling------------------ */
 
 .headline{
     display: flex;
@@ -128,7 +129,7 @@ p.description{
 
 @keyframes scrolldown{
     0%,100%{
-        transform: translateY(60px); 
+        transform: translateY(80px); 
     }
     50%{
         transform: translateY(30px); 
@@ -138,9 +139,10 @@ p.description{
 h1.beginning{
     color: var(--white);
     text-transform: uppercase;
-    margin-top: 13rem;
+    margin-top: 12rem;
 }
 
+/*------------ features start here--------------------- */
 .features{
     margin-top: 2rem;
     display: flex;
@@ -188,6 +190,10 @@ h1.beginning{
 .box h4{
     text-transform: uppercase;
     font-size: 20px;
+    /* font-weight: 800; */
+}
+.box p{
+    color: var(--textGray);
 }
 
 .box:hover{
@@ -197,7 +203,78 @@ h1.beginning{
 .bigdivider{
     margin: 3rem;
     width: 80%;
-    border: 1px solid gray;
+    border: 1px solid rgb(187, 186, 186);
+}
+
+/*--------------- Destinations--------------- */
+
+.destinations{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    text-align:center;
+}
+
+.destinations>p{
+    color: var(--textGray);
+}
+
+.image-boxes{
+    display: flex;
+    gap: 2rem;
+    margin-top: 20px;
+}
+
+.image-box{
+    width: 420px;
+    height: 385px;
+    overflow: hidden;
+    border-radius: 2rem;
+}
+
+.overlap-1{
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.6)),url(assets/greece.png);
+
+}
+.overlap-2{
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.6)),url(assets/japan.png);
+
+}
+.overlap-3{
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.6)),url(assets/south_africa.png);
+}
+
+.overlap-1:hover,
+.overlap-2:hover,
+.overlap-3:hover{
+    height:450px;
+}
+
+.overlap-1,
+.overlap-2,
+.overlap-3{
+    height: 385px;
+    color: var(--white);
+    background-size: cover;
+    background-position: center;
+    transition: all 1s;
+}
+
+.overlap-text{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 300px;
+    /* border: 2px solid white; */
+}
+
+.overlap-text h4{
+    font-size: x-large;
+}
+
+.overlap-text p{
+    font-size: large;
 }
 
 
