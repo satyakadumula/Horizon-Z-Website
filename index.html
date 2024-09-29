@@ -1,354 +1,469 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Horizon-Z</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
-    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
     <!--------------------------- Hero Page ---------------------------------->
     <div class="heropage">
-        <!-- Navbar --------------------------------------------->
-        <nav>
-            <input type="checkbox" id="check">
-            <label for="check" class="checkbtn">
-                <i class="fa-solid fa-bars"></i>
-            </label>
-            <label class="logo">HORIZON-Z</label>
-            <ul>
-                <li>
-                    <a href="#features" onclick="uncheckCheckbox()">EXPLORE</a>
-                </li>
-                <li>
-                    <a href="#about" onclick="uncheckCheckbox()">ABOUT</a>
-                </li>
-                <li>
-                    <a href="#pricings" onclick="uncheckCheckbox()">SERVICES</a>
-                </li>
-                <li>
-                    <a href="#contact" onclick="uncheckCheckbox()">CONTACT</a>
-                </li>
-            </ul>
-        </nav>
-        <!-- <hr> -->
+      <!-- Navbar --------------------------------------------->
+      <nav>
+        <input type="checkbox" id="check" />
+        <label for="check" class="checkbtn">
+          <i class="fa-solid fa-bars"></i>
+        </label>
+        <label class="logo">
+          <div class="logo-img">
+            <img src="assets/" alt="" />
+          </div>
+          HORIZON-Z
+        </label>
+        <ul>
+          <li>
+            <a href="#features" onclick="uncheckCheckbox()">EXPLORE</a>
+          </li>
+          <li>
+            <a href="#about" onclick="uncheckCheckbox()">ABOUT</a>
+          </li>
+          <li>
+            <a href="#pricings" onclick="uncheckCheckbox()">SERVICES</a>
+          </li>
+          <li>
+            <a href="#contact" onclick="uncheckCheckbox()">CONTACT</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- <hr> -->
 
-        <!-- main Hero page-------------------------------------- -->
-        <div class="headline">
-            <p class="description">TRAVEL TO THE WORLD OF HORIZONS</p>
-            <h1 class="title">HORIZON-Z</h1>
-            <!-- button explore -->
-            <a href="" id="destinations">
-                <button class="callout">LET'S DIG IN</button>
-            </a>
-            <i class="fa-solid upAndDown fa-arrow-down fa-lg"></i>
+      <!-- main Hero page-------------------------------------- -->
+      <div class="headline">
+        <p class="description">TRAVEL TO THE WORLD OF HORIZONS</p>
+        <h1 class="title">HORIZON-Z</h1>
+        <!-- button explore -->
+        <a href="" id="destinations">
+          <button class="callout">LET'S DIG IN</button>
+        </a>
+        <i class="fa-solid upAndDown fa-arrow-down fa-lg"></i>
 
-            <h1 class="beginning">Begin from travelling the horizons</h1>
-        </div>
+        <h1 class="beginning">Begin from travelling the horizons</h1>
+      </div>
     </div>
 
     <!----------------------------- features page (explore)-------------------------------------- -->
-    <div class="features" id="features">    
-        <h1>What can i expect?</h1>
-        <hr class="divider">
-        <div class="boxes">
-            <div class="box">
-                <i class="fa-solid fa-globe " style="color:var(--accent); font-size: 1.5rem;"></i>
-                <h4>Tailored Experiences</h4>
-                <p>Our commitment to providing <br>
-                    tailored experiences set us apart.
-                </p>
-            </div>
-            <div class="box">
-                <i class="fa-regular fa-compass" style="color:var(--accent); font-size: 1.5rem;"></i>
-                <h4>Expert Guidance</h4>
-                <p>Our travel advisors have in-depth <br>
-                    knowledge of top destinations.
-                </p>
-            </div>
-            <div class="box">
-                <i class="fa-solid fa-plane-departure " style="color:var(--accent); font-size: 1.5rem;"></i>
-                <h4>Exclusive Access</h4>
-                <p>Benefits from partneships with <br>
-                    premium hotels, airlines, etc.
-                </p>
-            </div>
+    <div class="features" id="features">
+      <h1>What can i expect?</h1>
+      <hr class="divider" />
+      <div class="boxes">
+        <div class="box">
+          <i
+            class="fa-solid fa-globe"
+            style="color: var(--accent); font-size: 1.5rem"
+          ></i>
+          <h4>Tailored Experiences</h4>
+          <p>
+            Our commitment to providing <br />
+            tailored experiences set us apart.
+          </p>
         </div>
-        <hr class="bigdivider">
+        <div class="box">
+          <i
+            class="fa-regular fa-compass"
+            style="color: var(--accent); font-size: 1.5rem"
+          ></i>
+          <h4>Expert Guidance</h4>
+          <p>
+            Our travel advisors have in-depth <br />
+            knowledge of top destinations.
+          </p>
+        </div>
+        <div class="box">
+          <i
+            class="fa-solid fa-plane-departure"
+            style="color: var(--accent); font-size: 1.5rem"
+          ></i>
+          <h4>Exclusive Access</h4>
+          <p>
+            Benefits from partneships with <br />
+            premium hotels, airlines, etc.
+          </p>
+        </div>
+      </div>
+      <hr class="bigdivider" />
     </div>
 
     <!------------------------------Destination page --------------------------------------------  -->
     <div class="destinations" id="destinations">
-        <h1>TOP DESTINATIONS</h1>
-        <p>Explore the best horizons across the World!</p>
-        <div class="image-boxes">
-            <div class="image-box">
-                <div class="overlap-1">
-                    <div class="overlap-text">
-                        <h4>Greece</h4>
-                        <p>Santorini</p>
-                    </div>
-                </div>
+      <h1>TOP DESTINATIONS</h1>
+      <p>Explore the best horizons across the World!</p>
+      <div class="image-boxes">
+        <div class="image-box">
+          <div class="overlap-1">
+            <div class="overlap-text">
+              <h4>Greece</h4>
+              <p>Santorini</p>
             </div>
-            <div class="image-box">
-                <div class="overlap-2">
-                    <div class="overlap-text">
-                        <h4>Japan</h4>
-                        <p>Kyoto</p>
-                    </div>
-                </div>
-            </div>
-            <div class="image-box">
-                <div class="overlap-3">
-                    <div class="overlap-text">
-                        <h4>South Adrica</h4>
-                        <p>Cape Town</p>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+        <div class="image-box">
+          <div class="overlap-2">
+            <div class="overlap-text">
+              <h4>Japan</h4>
+              <p>Kyoto</p>
+            </div>
+          </div>
+        </div>
+        <div class="image-box">
+          <div class="overlap-3">
+            <div class="overlap-text">
+              <h4>South Adrica</h4>
+              <p>Cape Town</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-
 
     <!-------------------------------- About --------------------------------------------------------->
     <div class="about" id="about">
-        <!-- Welcome to HORIZON-Z -->
-        <div class="welcome">
-            <div class="h1text">
-                <h1>Welcome<br> to Horizon-Z</h1>
-            </div>
-            <div class="welcome-subtext">
-                <p>At HORIZON-Z, we believe in the beauty and aesthetic power in travelling. <br>
-                    Our mission is to curate the extraordinary experiences that go <br>
-                    beyond the horizons, creating memories that last for lifetime.
-                </p>
-                <button class="learnmore">
-                    Learn more<i class="fa-solid fa-arrow-trend-up" 
-                    style="padding-left: 10px;"></i>
-                </button>
-            </div>
+      <!-- Welcome to HORIZON-Z -->
+      <div class="welcome">
+        <div class="h1text">
+          <h1>
+            Welcome<br />
+            to Horizon-Z
+          </h1>
         </div>
+        <div class="welcome-subtext">
+          <p>
+            At HORIZON-Z, we believe in the beauty and aesthetic power in
+            travelling. <br />
+            Our mission is to curate the extraordinary experiences that go
+            <br />
+            beyond the horizons, creating memories that last for lifetime.
+          </p>
+          <button class="learnmore">
+            Learn more<i
+              class="fa-solid fa-arrow-trend-up"
+              style="padding-left: 10px"
+            ></i>
+          </button>
+        </div>
+      </div>
 
-        <!-- Photo slideShow -->
-        <div class="slide-photo">
-            <div>
-                <img src="assets/Paris.jpeg" style="border-top-left-radius: 2rem; 
-            border-bottom-left-radius:2rem" alt="ichi">
-            </div>
-            <div>
-                <img src="assets/tajmahal.jpeg" alt="ni">
-            </div>
-            <div>
-                <img src="assets/rio.jpeg" alt="san">
-            </div>
-            <div>
-                <img src="assets/tokyotower.jpeg" style="border-top-right-radius: 2rem; 
-            border-bottom-right-radius:2rem" alt="yon">
-            </div>
+      <!-- Photo slideShow -->
+      <div class="slide-photo">
+        <div>
+          <img
+            src="assets/Paris.jpeg"
+            style="
+              border-top-left-radius: 2rem;
+              border-bottom-left-radius: 2rem;
+            "
+            alt="ichi"
+          />
         </div>
+        <div>
+          <img src="assets/tajmahal.jpeg" alt="ni" />
+        </div>
+        <div>
+          <img src="assets/rio.jpeg" alt="san" />
+        </div>
+        <div>
+          <img
+            src="assets/tokyotower.jpeg"
+            style="
+              border-top-right-radius: 2rem;
+              border-bottom-right-radius: 2rem;
+            "
+            alt="yon"
+          />
+        </div>
+      </div>
 
-        <!-- Beyond Horizons -->
-        <div class="beyond-horizons">
-            <div class="beyond-travel-text">
-                <h1>BeyonDorizonZ</h1>
-                <h2><i>- It's an Adventure</i></h2>
-                <p>
-                    We just don't plan trips; we curate experiences that redefine<br>
-                    the art of travelling across horizons. Established with a vision<br>
-                    to go beyond the horizons. HORIZON-Z is more than a travel firm -<br>
-                    It's a gateway to a lifecycle of exploration, adventures and discoveries.<br>
-                    
-                </p>
-                <button class="learnmore" style="left: 15rem;">
-                    Learn more<i class="fa-solid fa-arrow-trend-up" 
-                    style="padding-left: 10px;"></i>
-                </button>
-            </div>
-            <img src="assets/flightAdventure.jpeg" alt="">
+      <!-- Beyond Horizons -->
+      <div class="beyond-horizons">
+        <div class="beyond-travel-text">
+          <h1>BeyonDorizonZ</h1>
+          <h2><i>- It's an Adventure</i></h2>
+          <p>
+            We just don't plan trips; we curate experiences that redefine<br />
+            the art of travelling across horizons. Established with a vision<br />
+            to go beyond the horizons. HORIZON-Z is more than a travel firm -<br />
+            It's a gateway to a lifecycle of exploration, adventures and
+            discoveries.<br />
+          </p>
+          <button class="learnmore" style="left: 15rem">
+            Learn more<i
+              class="fa-solid fa-arrow-trend-up"
+              style="padding-left: 10px"
+            ></i>
+          </button>
         </div>
+        <img src="assets/flightAdventure.jpeg" alt="" />
+      </div>
     </div>
-    <hr style="width: 80%; margin: 48px;position: relative; left: 7rem; border: 1px solid var(--bordergray);">
+    <hr
+      style="
+        width: 80%;
+        margin: 48px;
+        position: relative;
+        left: 7rem;
+        border: 1px solid var(--bordergray);
+      "
+    />
 
     <!------------------------------- Pricing------------------------------------ -->
     <div class="pricing" id="pricing">
-        <div class="pricing-header">
-            <h1>Pricing & Services</h1>
-            <p>Convenient & Customized Packages</p>
-        </div>
-        <div class="price-boxes">
-            <!-- basic package -------------------------------------------->
-            <div class="price-box basic">
-                <h3>Basic Package</h3>
-                <h4>Essential Explorer</h4>
-                <hr/>
-                <div class="basic-description">
-                    <!-- 1--------------------------- -->
-                    <div class="basic-description-box">
-                        <div class="basic-description-title">
-                            <i class="fa-regular fa-circle fa-xs"></i>
-                            <p>Accomodation</p>
-                        </div>
-                        <p class="basic-description-text" style="color: gray;">
-                            Comfortable an and Well-reviewed hotels or <br>
-                            budget-friendly boutique stays.
-                        </p>
-                    </div>
-                    <!-- 2------------------------------- -->
-                    <div class="basic-description-box">
-                        <div class="basic-description-title">
-                            <i class="fa-regular fa-circle fa-xs"></i>
-                            <p>Transporatation</p>
-                        </div>
-                        <p class="basic-description-text" style="color: var(--textGray);">
-                            Standard or Economy class flights with <br>
-                            convenient timings.
-                        </p>
-                    </div>
-                    <!-- 3--------------------------------- -->
-                    <div class="basic-description-box">
-                        <div class="basic-description-title">
-                            <i class="fa-regular fa-circle fa-xs"></i>
-                            <p>Activities</p>
-                        </div>
-                        <p class="basic-description-text" style="color: var(--textGray);">
-                            Essential guided tours and popular attractions.
-                        </p>
-                    </div>
-                    <!-- 4------------------------------- -->
-                    <div class="basic-description-box">
-                        <div class="basic-description-title">
-                            <i class="fa-regular fa-circle fa-xs"></i>
-                            <p>Meals</p>
-                        </div>
-                        <p class="basic-description-text" style="color: var(--textGray);">
-                            Breakfast & Dinner included.
-                        </p>
-                    </div>
-                </div>
+      <div class="pricing-header">
+        <h1>Pricing & Services</h1>
+        <p>Convenient & Customized Packages</p>
+      </div>
+      <div class="price-boxes">
+        <!-- basic package -------------------------------------------->
+        <div class="price-box basic">
+          <h3>Basic Package</h3>
+          <h4>Essential Explorer</h4>
+          <hr />
+          <div class="basic-description">
+            <!-- 1--------------------------- -->
+            <div class="basic-description-box">
+              <div class="basic-description-title">
+                <i class="fa-regular fa-circle fa-xs"></i>
+                <p>Accomodation</p>
+              </div>
+              <p class="basic-description-text" style="color: gray">
+                Comfortable an and Well-reviewed hotels or <br />
+                budget-friendly boutique stays.
+              </p>
             </div>
-            <!-- High-End Package -------------------------------------------->
-            <div class="price-box high-end">
-                <h3>High-End Package</h3>
-                <h4>Premium Pioneer</h4>
-                <hr/>
-                <div class="basic-description">
-                    <!-- 1--------------------------- -->
-                    <div class="basic-description-box">
-                        <div class="basic-description-title">
-                            <i class="fa-regular fa-circle fa-xs"></i>
-                            <p>Accomodation</p>
-                        </div>
-                        <p class="basic-description-text" style="color: var(--textGray);">
-                            Upscale hotels or boutique luxury accomodations.
-                        </p>
-                    </div>
-                    <!-- 2------------------------------- -->
-                    <div class="basic-description-box">
-                        <div class="basic-description-title">
-                            <i class="fa-regular fa-circle fa-xs"></i>
-                            <p>Transporatation</p>
-                        </div>
-                        <p class="basic-description-text" style="color: var(--textGray);">
-                            Premium class flights or private transfers.
-                        </p>
-                    </div>
-                    <!-- 3--------------------------------- -->
-                    <div class="basic-description-box">
-                        <div class="basic-description-title">
-                            <i class="fa-regular fa-circle fa-xs"></i>
-                            <p>Activities</p>
-                        </div>
-                        <p class="basic-description-text" style="color: var(--textGray);">
-                            Curated experiences, exclusive guided tours <br>
-                            and acces to iconic attractions.
-                        </p>
-                    </div>
-                    <!-- 4------------------------------- -->
-                    <div class="basic-description-box">
-                        <div class="basic-description-title">
-                            <i class="fa-regular fa-circle fa-xs"></i>
-                            <p>Meals</p>
-                        </div>
-                        <p class="basic-description-text" style="color: var(--textGray);">
-                            Breakfast, selective lunches & Dinners <br>
-                            at selected restaurants.
-                        </p>
-                    </div>
-                </div>
+            <!-- 2------------------------------- -->
+            <div class="basic-description-box">
+              <div class="basic-description-title">
+                <i class="fa-regular fa-circle fa-xs"></i>
+                <p>Transporatation</p>
+              </div>
+              <p class="basic-description-text" style="color: var(--textGray)">
+                Standard or Economy class flights with <br />
+                convenient timings.
+              </p>
             </div>
-            <!-- Luxury Package -------------------------------------------->
-            <div class="price-box luxury">
-                <h3>Luxury Package</h3>
-                <h4>luxury odyssey</h4>
-                <hr/>
-                <div class="basic-description">
-                    <!-- 1--------------------------- -->
-                    <div class="basic-description-box">
-                        <div class="basic-description-title">
-                            <i class="fa-regular fa-circle fa-xs"></i>
-                            <p>Accomodation</p>
-                        </div>
-                        <p class="basic-description-text" style="color: var(--textGray);">
-                            5-star luxury hotels, resorts or exclusive villas.
-                        </p>
-                    </div>
-                    <!-- 2------------------------------- -->
-                    <div class="basic-description-box">
-                        <div class="basic-description-title">
-                            <i class="fa-regular fa-circle fa-xs"></i>
-                            <p>Transporatation</p>
-                        </div>
-                        <p class="basic-description-text" style="color: var(--textGray);">
-                            First class or Private jet Options. <br>
-                            Chauffeur-driven transfers.
-                        </p>
-                    </div>
-                    <!-- 3--------------------------------- -->
-                    <div class="basic-description-box">
-                        <div class="basic-description-title">
-                            <i class="fa-regular fa-circle fa-xs"></i>
-                            <p>Activities</p>
-                        </div>
-                        <p class="basic-description-text" style="color: var(--textGray);">
-                            Private guided tours, VIP access to attractions <br>
-                            and bespoke experiences.
-                        </p>
-                    </div>
-                    <!-- 4------------------------------- -->
-                    <div class="basic-description-box">
-                        <div class="basic-description-title">
-                            <i class="fa-regular fa-circle fa-xs"></i>
-                            <p>Meals</p>
-                        </div>
-                        <p class="basic-description-text" style="color: var(--textGray);">
-                            Gourmet dining experiences, with fine <br>
-                            dining and unique culinary events.
-                        </p>
-                    </div>
-                </div>
+            <!-- 3--------------------------------- -->
+            <div class="basic-description-box">
+              <div class="basic-description-title">
+                <i class="fa-regular fa-circle fa-xs"></i>
+                <p>Activities</p>
+              </div>
+              <p class="basic-description-text" style="color: var(--textGray)">
+                Essential guided tours and popular attractions.
+              </p>
             </div>
+            <!-- 4------------------------------- -->
+            <div class="basic-description-box">
+              <div class="basic-description-title">
+                <i class="fa-regular fa-circle fa-xs"></i>
+                <p>Meals</p>
+              </div>
+              <p class="basic-description-text" style="color: var(--textGray)">
+                Breakfast & Dinner included.
+              </p>
+            </div>
+          </div>
         </div>
-        <div class="know-more">
-            <h2>Know more about YOUR package</h2>
-            <button class="learnmore">
-                Know more<i class="fa-solid fa-book" 
-                style="padding-left: 10px;"></i>
-            </button>
+        <!-- High-End Package -------------------------------------------->
+        <div class="price-box high-end">
+          <h3>High-End Package</h3>
+          <h4>Premium Pioneer</h4>
+          <hr />
+          <div class="basic-description">
+            <!-- 1--------------------------- -->
+            <div class="basic-description-box">
+              <div class="basic-description-title">
+                <i class="fa-regular fa-circle fa-xs"></i>
+                <p>Accomodation</p>
+              </div>
+              <p class="basic-description-text" style="color: var(--textGray)">
+                Upscale hotels or boutique luxury accomodations.
+              </p>
+            </div>
+            <!-- 2------------------------------- -->
+            <div class="basic-description-box">
+              <div class="basic-description-title">
+                <i class="fa-regular fa-circle fa-xs"></i>
+                <p>Transporatation</p>
+              </div>
+              <p class="basic-description-text" style="color: var(--textGray)">
+                Premium class flights or private transfers.
+              </p>
+            </div>
+            <!-- 3--------------------------------- -->
+            <div class="basic-description-box">
+              <div class="basic-description-title">
+                <i class="fa-regular fa-circle fa-xs"></i>
+                <p>Activities</p>
+              </div>
+              <p class="basic-description-text" style="color: var(--textGray)">
+                Curated experiences, exclusive guided tours <br />
+                and acces to iconic attractions.
+              </p>
+            </div>
+            <!-- 4------------------------------- -->
+            <div class="basic-description-box">
+              <div class="basic-description-title">
+                <i class="fa-regular fa-circle fa-xs"></i>
+                <p>Meals</p>
+              </div>
+              <p class="basic-description-text" style="color: var(--textGray)">
+                Breakfast, selective lunches & Dinners <br />
+                at selected restaurants.
+              </p>
+            </div>
+          </div>
         </div>
-    </div>
-    <hr style="width: 80%; margin-top: 80px; margin-bottom: 40px;position: relative; left: 10rem; border: 1px solid var(--bordergray);">
-    
-    <div class="contact" id="contact">
-        <h1 style="margin-bottom: 2rem;">REACH US <span style="color: var(--accent);">NOW</span></h1>
-        <img src="assets/Contact-img.jpeg" alt="cat stare" 
-        style="border-radius: 2rem;">
-        <button class="learnmore contact-btn">
-            Contact Us<i class="fa-regular fa-snowflake"  
-            style="padding-left: 10px;"></i>
+        <!-- Luxury Package -------------------------------------------->
+        <div class="price-box luxury">
+          <h3>Luxury Package</h3>
+          <h4>luxury odyssey</h4>
+          <hr />
+          <div class="basic-description">
+            <!-- 1--------------------------- -->
+            <div class="basic-description-box">
+              <div class="basic-description-title">
+                <i class="fa-regular fa-circle fa-xs"></i>
+                <p>Accomodation</p>
+              </div>
+              <p class="basic-description-text" style="color: var(--textGray)">
+                5-star luxury hotels, resorts or exclusive villas.
+              </p>
+            </div>
+            <!-- 2------------------------------- -->
+            <div class="basic-description-box">
+              <div class="basic-description-title">
+                <i class="fa-regular fa-circle fa-xs"></i>
+                <p>Transporatation</p>
+              </div>
+              <p class="basic-description-text" style="color: var(--textGray)">
+                First class or Private jet Options. <br />
+                Chauffeur-driven transfers.
+              </p>
+            </div>
+            <!-- 3--------------------------------- -->
+            <div class="basic-description-box">
+              <div class="basic-description-title">
+                <i class="fa-regular fa-circle fa-xs"></i>
+                <p>Activities</p>
+              </div>
+              <p class="basic-description-text" style="color: var(--textGray)">
+                Private guided tours, VIP access to attractions <br />
+                and bespoke experiences.
+              </p>
+            </div>
+            <!-- 4------------------------------- -->
+            <div class="basic-description-box">
+              <div class="basic-description-title">
+                <i class="fa-regular fa-circle fa-xs"></i>
+                <p>Meals</p>
+              </div>
+              <p class="basic-description-text" style="color: var(--textGray)">
+                Gourmet dining experiences, with fine <br />
+                dining and unique culinary events.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="know-more">
+        <h2>Know more about YOUR package</h2>
+        <button class="learnmore">
+          Know more<i class="fa-solid fa-book" style="padding-left: 10px"></i>
         </button>
+      </div>
     </div>
-</body>
+    <hr
+      style="
+        width: 80%;
+        margin-top: 80px;
+        margin-bottom: 40px;
+        position: relative;
+        left: 10rem;
+        border: 1px solid var(--bordergray);
+      "
+    />
+
+    <!-------------------------------Contact----------------------------------------  -->
+    <div class="contact" id="contact">
+      <h1 style="margin-bottom: 1rem">
+        REACH US <span style="color: var(--accent)">NOW</span>
+      </h1>
+      <img
+        src="assets/Contact-img.jpeg"
+        alt="cat stare"
+        style="border-radius: 2rem"
+      />
+      <button class="learnmore contact-btn">
+        Contact Us<i
+          class="fa-regular fa-snowflake"
+          style="padding-left: 10px"
+        ></i>
+      </button>
+    </div>
+
+    <!-- -----------------------------Footer----------------------------------------- -->
+    <footer>
+      <div class="copyrights">
+        <div class="summary-and-services">
+          <div class="firm-details">
+            <img src="" alt="" />
+            <p>Horizon-Z</p>
+            <p>About the website</p>
+          </div>
+          <div class="browse">
+            <h3>Browse</h3>
+            <a href="">Home</a>
+            <a href="">Explore</a>
+            <a href="">About</a>
+            <a href="">Services</a>
+            <a href="">Contact</a>
+          </div>
+          <div class="services">
+            <h3>Services</h3>
+            <a href="">Portfolio</a>
+            <a href="">Parallox Website</a>
+            <a href="">Artfolio</a>
+          </div>
+        </div>
+        <hr class="footer-hr" />
+        <div class="footer-contact">
+          <div class="connect">
+            <h2>Contact</h2>
+          </div>
+          <div class="contact-details">
+            <i class="fa-solid fa-square-envelope"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-square-github"></i>
+            <i class="fa-brands fa-square-instagram"></i>
+          </div>
+        </div>
+        <hr class="footer-hr" />
+        <div class="footer-copyrights">
+          <div class="left-footer-copyrights">
+            <p>copyrights 2024</p>
+            <p>Educational purpose</p>
+          </div>
+          <div class="right-footer-copyrights">
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
