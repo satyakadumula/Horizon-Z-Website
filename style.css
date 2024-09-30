@@ -529,13 +529,14 @@ h1.beginning {
 
 /* -----------------Footer-------------------------------------- */
 .copyrights {
-  padding-top: 2rem;
+  padding-top: 1rem;
   background-color: black;
   color: var(--white);
   display: flex;
   flex-direction: column;
 }
 
+/* summary and services */
 .summary-and-services {
   display: flex;
   justify-content: space-evenly;
@@ -553,4 +554,55 @@ h1.beginning {
 .footer-copyrights {
   display: flex;
   justify-content: space-between;
+}
+/* browse and services */
+.browse,
+.services {
+  display: flex;
+  flex-direction: column;
+  /* align-items: left; */
+}
+
+.browse a,
+.services a {
+  text-decoration: none;
+  color: var(--textGray);
+}
+
+.browse h3,
+.services h3 {
+  padding-bottom: 10px;
+  /* margin-top: -15px; */
+}
+
+.browse a:hover,
+.services a:hover {
+  text-decoration: underline;
+  color: rgb(191, 190, 190);
+}
+
+/* footer-contact */
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact-details {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.contact-details i {
+  color: white;
+}
+
+.contact-details i:hover {
+  color: rgb(165, 165, 165);
+}
+
+.footer-copyrights p {
+  font-size: 12px;
+  margin-bottom: 10px;
 }
