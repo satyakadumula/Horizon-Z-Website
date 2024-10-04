@@ -19,7 +19,7 @@
 .heropage {
   min-width: 100%;
   min-height: 120vh;
-  background-image: url(assets/heropage.jpg);
+  background-image: url(assets/Heropage-final.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   /* display: flex; */
@@ -36,7 +36,6 @@ nav {
 }
 
 .logo-img {
-  border: 2px solid black;
   height: 70px;
   width: 70px;
   border-radius: 50%;
@@ -99,7 +98,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  background-color: rgb(26, 10, 10, 0.3);
+  background-color: rgba(170, 169, 169, 0.2);
 }
 
 /*----------------------- main hero page styling------------------ */
@@ -115,10 +114,13 @@ nav ul li a:hover {
 
 p.description {
   font-size: 40px;
+  font-weight: bold;
+  color: white;
 }
 
 .title {
   font-size: 130px;
+  margin-top: 30px;
 }
 
 .callout {
@@ -127,7 +129,7 @@ p.description {
   background-color: transparent;
   font-size: 20px;
   margin-top: 70px;
-  padding: 5px 40px;
+  padding: 10px 40px;
   border-radius: 3px;
   cursor: pointer;
   transition: all 0.5s;
@@ -135,7 +137,7 @@ p.description {
 
 .callout:hover {
   border-radius: 20px;
-  padding: 5px 20px;
+  padding: 10px 20px;
   background-color: rgb(19, 19, 19, 0.5);
 }
 
@@ -602,7 +604,34 @@ h1.beginning {
   color: rgb(165, 165, 165);
 }
 
-.footer-copyrights p {
+.left-footer-copyrights p {
   font-size: 12px;
   margin-bottom: 10px;
+  margin-left: 30px;
+}
+
+.right-footer-copyrights p {
+  font-size: 12px;
+  margin-bottom: 10px;
+  margin-right: 30px;
+  text-align: right;
+}
+
+.firm-details > div > img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+.firm-details {
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  margin-left: -200px;
+}
+
+.about-horizon p {
+  font-size: 12px;
+  width: auto;
+  color: rgb(225, 225, 225);
 }
