@@ -12,6 +12,22 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <style>
+      ::-webkit-scrollbar {
+        width: 10px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 10px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #6b6b6b;
+      }
+    </style>
+    <script src="index.js"></script>
   </head>
   <body>
     <!--------------------------- Hero Page ---------------------------------->
@@ -26,7 +42,7 @@
           <div class="logo-img">
             <img src="assets/Horizon-Z-logo.jpeg" alt="" />
           </div>
-          HORIZON-Z
+          <div><h3>HORIZON-Z</h3></div>
         </label>
         <ul>
           <li>
@@ -48,14 +64,13 @@
       <!-- main Hero page-------------------------------------- -->
       <div class="headline">
         <h1 class="title">HORIZON-Z</h1>
-        <p class="description">TRAVEL TO THE WORLD OF HORIZONS</p>
+        <p class="description">TRAVEL TO THE WORLD OF HORIZONZ</p>
         <!-- button explore -->
         <a href="" id="destinations">
           <button class="callout">LET'S DIG IN</button>
         </a>
         <i class="fa-solid upAndDown fa-arrow-down fa-lg"></i>
-
-        <h1 class="beginning">Begin from travelling the horizons</h1>
+        <h1 class="beginning">Capture the moments from above the world</h1>
       </div>
     </div>
 
@@ -192,17 +207,21 @@
 
       <!-- Beyond Horizons -->
       <div class="beyond-horizons">
-        <div class="beyond-travel-text">
-          <h1>BeyonDorizonZ</h1>
-          <h2><i>- It's an Adventure</i></h2>
-          <p>
-            We just don't plan trips; we curate experiences that redefine<br />
-            the art of travelling across horizons. Established with a vision<br />
-            to go beyond the horizons. HORIZON-Z is more than a travel firm -<br />
-            It's a gateway to a lifecycle of exploration, adventures and
-            discoveries.<br />
-          </p>
-          <button class="learnmore" style="left: 15rem">
+        <div class="part1">
+          <div class="beyond-travel-text">
+            <h1>BeyonDorizonZ</h1>
+            <h2><i>- It's an Adventure</i></h2>
+            <p>
+              We just don't plan trips; we curate experiences that redefine<br />
+              the art of travelling across horizons. Established with a
+              vision<br />
+              to go beyond the horizons. HORIZON-Z is more than a travel firm
+              -<br />
+              It's a gateway to a lifecycle of exploration, adventures and
+              discoveries.<br />
+            </p>
+          </div>
+          <button class="learnmore">
             Learn more<i
               class="fa-solid fa-arrow-trend-up"
               style="padding-left: 10px"
@@ -211,16 +230,8 @@
         </div>
         <img src="assets/flightAdventure.jpeg" alt="" />
       </div>
+      <hr class="post-divider" />
     </div>
-    <hr
-      style="
-        width: 80%;
-        margin: 48px;
-        position: relative;
-        left: 7rem;
-        border: 1px solid var(--bordergray);
-      "
-    />
 
     <!------------------------------- Pricing------------------------------------ -->
     <div class="pricing" id="pricing">
@@ -382,22 +393,15 @@
         </div>
       </div>
       <div class="know-more">
-        <h2>Know more about YOUR package</h2>
+        <h2>
+          KNOW MORE ABOUT <span style="color: var(--accent)">YOUR</span> PACKAGE
+        </h2>
         <button class="learnmore">
           Know more<i class="fa-solid fa-book" style="padding-left: 10px"></i>
         </button>
       </div>
     </div>
-    <hr
-      style="
-        width: 80%;
-        margin-top: 80px;
-        margin-bottom: 40px;
-        position: relative;
-        left: 10rem;
-        border: 1px solid var(--bordergray);
-      "
-    />
+    <hr class="post-divider" />
 
     <!-------------------------------Contact----------------------------------------  -->
     <div class="contact" id="contact">
@@ -410,7 +414,7 @@
         style="border-radius: 2rem"
       />
       <button class="learnmore contact-btn">
-        Contact Us<i
+        Contact<i
           class="fa-regular fa-snowflake"
           style="padding-left: 10px"
         ></i>
@@ -429,37 +433,38 @@
             <div class="about-horizon">
               <p>
                 Horizon-Z Travels & Tours offers premium travel experiences with
-                <br />
                 exclusive partnerships with luxury hotels and airlines
-                worldwide. <br />We ensure personalized service, amazing
-                journeys, and
-                <br />
-                unforgettable adventures. From opulent stays to VIP flights,
-                <br />we turn your travels into cherished lifetime memories
-                with<br />
+                worldwide. We ensure personalized service, amazing journeys, and
+                unforgettable adventures. From opulent stays to VIP flights, we
+                turn your travels into cherished lifetime memories with
                 unparalleled comfort and efficiency. Explore the world in style!
               </p>
             </div>
           </div>
-          <div class="browse">
-            <h3>Browse</h3>
-            <a href="">Home</a>
-            <a href="">Explore</a>
-            <a href="">About</a>
-            <a href="">Services</a>
-            <a href="">Contact</a>
-          </div>
-          <div class="services">
-            <h3>Services</h3>
-            <a href="">My Portfolio</a>
-            <a href="">Parallox Website</a>
-            <a href="">My Artfolio</a>
+          <hr class="footer-hr" />
+          <!-- browse-services -->
+          <div class="browse-services">
+            <div class="browse">
+              <h3>Browse</h3>
+              <a href="">Home</a>
+              <a href="">Explore</a>
+              <a href="">About</a>
+              <a href="">Services</a>
+              <a href="">Contact</a>
+            </div>
+            <hr class="footer-hr" />
+            <div class="services">
+              <h3>Services</h3>
+              <a href="">My Portfolio</a>
+              <a href="">Parallox Website</a>
+              <a href="">My Artfolio</a>
+            </div>
           </div>
         </div>
         <hr class="footer-hr" />
         <div class="footer-contact">
           <div class="connect">
-            <h2>Contact</h2>
+            <h2>Real World contact Information</h2>
           </div>
           <div class="contact-details">
             <a href="mailto:kadumulasatya@gmail.com">
@@ -490,10 +495,9 @@
           </div>
           <div class="right-footer-copyrights">
             <p>
-              This website is an independent project, not affiliated with or
-              endorsed by Nike Inc. <br />
-              Nike branding and intellectual property used under fair use for
-              portfolio demonstration.
+              This website is an independent project.<br />
+              Not branding any intellectual property and is used under fair use
+              for portfolio demonstration.
             </p>
           </div>
         </div>
