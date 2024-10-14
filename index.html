@@ -27,7 +27,6 @@
         background: #6b6b6b;
       }
     </style>
-    <script src="index.js"></script>
   </head>
   <body>
     <!--------------------------- Hero Page ---------------------------------->
@@ -46,13 +45,13 @@
         </label>
         <ul>
           <li>
-            <a href="#features" onclick="uncheckCheckbox()">EXPLORE</a>
+            <a href="#bestHorizons" onclick="uncheckCheckbox()">EXPLORE</a>
           </li>
           <li>
             <a href="#about" onclick="uncheckCheckbox()">ABOUT</a>
           </li>
           <li>
-            <a href="#pricings" onclick="uncheckCheckbox()">SERVICES</a>
+            <a href="#pricing" onclick="uncheckCheckbox()">SERVICES</a>
           </li>
           <li>
             <a href="#contact" onclick="uncheckCheckbox()">CONTACT</a>
@@ -67,10 +66,12 @@
         <p class="description">TRAVEL TO THE WORLD OF HORIZONZ</p>
         <!-- button explore -->
         <a href="" id="destinations">
-          <button class="callout">LET'S DIG IN</button>
+          <a href="#beginning"><button class="callout">LET'S DIG IN</button></a>
         </a>
         <i class="fa-solid upAndDown fa-arrow-down fa-lg"></i>
-        <h1 class="beginning">Capture the moments from above the world</h1>
+        <h1 class="beginning" id="beginning">
+          Capture the moments from above the world
+        </h1>
       </div>
     </div>
 
@@ -117,7 +118,7 @@
     </div>
 
     <!------------------------------Destination page --------------------------------------------  -->
-    <div class="destinations" id="destinations">
+    <div class="destinations" id="bestHorizons">
       <h1>TOP DESTINATIONS</h1>
       <p>Explore the best horizons across the World!</p>
       <div class="image-boxes">
@@ -178,30 +179,16 @@
       <!-- Photo slideShow -->
       <div class="slide-photo">
         <div>
-          <img
-            src="assets/Paris.jpeg"
-            style="
-              border-top-left-radius: 2rem;
-              border-bottom-left-radius: 2rem;
-            "
-            alt="ichi"
-          />
+          <img src="assets/Paris.jpeg" class="img1" alt="ichi" />
         </div>
         <div>
-          <img src="assets/tajmahal.jpeg" alt="ni" />
+          <img class="img2" src="assets/tajmahal.jpeg" alt="ni" />
         </div>
         <div>
-          <img src="assets/rio.jpeg" alt="san" />
+          <img class="img3" src="assets/rio.jpeg" alt="san" />
         </div>
         <div>
-          <img
-            src="assets/tokyotower.jpeg"
-            style="
-              border-top-right-radius: 2rem;
-              border-bottom-right-radius: 2rem;
-            "
-            alt="yon"
-          />
+          <img class="img4" src="assets/tokyotower.jpeg" alt="yon" />
         </div>
       </div>
 
@@ -253,7 +240,7 @@
                 <p>Accomodation</p>
               </div>
               <p class="basic-description-text" style="color: gray">
-                Comfortable an and Well-reviewed hotels or <br />
+                Comfortable and Well-reviewed hotels or <br />
                 budget-friendly boutique stays.
               </p>
             </div>
@@ -413,12 +400,13 @@
         alt="cat stare"
         style="border-radius: 2rem"
       />
-      <button class="learnmore contact-btn">
-        Contact<i
-          class="fa-regular fa-snowflake"
-          style="padding-left: 10px"
-        ></i>
-      </button>
+      <a href="mailto:kadumulasatya@gmail.com"
+        ><button class="learnmore contact-btn">
+          Contact<i
+            class="fa-regular fa-snowflake"
+            style="padding-left: 10px"
+          ></i></button
+      ></a>
     </div>
 
     <!-- -----------------------------Footer----------------------------------------- -->
@@ -503,5 +491,6 @@
         </div>
       </div>
     </footer>
+    <script src="index.js"></script>
   </body>
 </html>

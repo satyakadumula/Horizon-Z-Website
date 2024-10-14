@@ -3,9 +3,12 @@
 * {
   margin: 0;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-  scroll-behavior: smooth;
   /* background-color: rgba(rgb(251, 235, 235), rgb(229, 232, 229), rgb(242, 242, 252), 0.2); */
   /* position: relative ; */
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -51,6 +54,10 @@ nav {
   border-radius: 50%;
 }
 
+#check {
+  display: none;
+}
+
 .checkbtn {
   font-size: 30px;
   color: var(--white);
@@ -59,10 +66,6 @@ nav {
   line-height: 80px;
   margin-right: 40px;
   cursor: pointer;
-  display: none;
-}
-
-#check {
   display: none;
 }
 
@@ -381,6 +384,16 @@ h1.beginning {
   transition: all 1s;
 }
 
+.img1 {
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+}
+
+.img4 {
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+}
+
 .slide-photo img:hover {
   transform: scale(1.1);
 }
@@ -661,7 +674,7 @@ h1.beginning {
   text-align: right;
 }
 
-/*------------------------ Media Queries-----------------------------  */
+/*---------Media Queries-----------------------------  */
 
 @media (max-width: 586px) {
   .logo-img {
@@ -673,9 +686,34 @@ h1.beginning {
     padding: 0 10px;
     gap: 10px;
   }
+  .checkbtn {
+    display: inline-block;
+    position: absolute;
+    right: -20px;
+  }
   nav ul {
+    /* border: 2px solid green; */
+    position: fixed;
+    background-color: rgb(14, 9, 39);
+    width: 60%;
+    height: 100vh;
+    z-index: 2;
+    padding: 0;
     display: none;
   }
+  nav ul li {
+    display: flex;
+    line-height: 40px;
+  }
+  nav ul li a {
+    font-size: 15px;
+    width: 100%;
+    text-align: center;
+  }
+  #check:checked ~ ul {
+    display: block;
+  }
+
   .title {
     font-size: 60px;
     margin-top: 10px;
@@ -686,6 +724,10 @@ h1.beginning {
     color: white;
     text-align: center;
   }
+  .headline > h1 {
+    color: rgb(50, 50, 50);
+  }
+  /* features */
   .callout {
     backdrop-filter: blur(10px);
     margin-top: 30px;
@@ -702,7 +744,6 @@ h1.beginning {
   .divider {
     width: 30%;
   }
-  /* features */
   .boxes {
     flex-direction: column;
   }
@@ -748,6 +789,19 @@ h1.beginning {
     width: 160px;
     object-fit: cover;
     object-position: center;
+  }
+  .img1 {
+    border-bottom-left-radius: 0;
+  }
+  .img2 {
+    border-top-right-radius: 2rem;
+  }
+  .img3 {
+    border-bottom-left-radius: 2rem;
+  }
+  .img4 {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 2rem;
   }
   /* beyond horizons */
   .beyond-horizons {
@@ -830,6 +884,9 @@ h1.beginning {
   }
   .contact > img {
     width: 90%;
+  }
+  .contact > a {
+    width: 60%;
   }
   .contact-btn {
     width: 90%;

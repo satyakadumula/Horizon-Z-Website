@@ -1,3 +1,5 @@
-function uncheckedCheckbox(){
-    document.getElementById("check").checked = false;
+
+console.log("It's working perfectly.")
+function uncheckCheckbox(){
+    document.getElementById('check').checked = false;
 }
