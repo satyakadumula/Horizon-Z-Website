@@ -992,16 +992,21 @@ h1.beginning {
   }
   .about-horizon p {
     width: 100%;
+    font-size: 20px;
   }
   .summary-and-services {
     flex-direction: column;
   }
   .firm-details {
+    margin-top: 10px;
     justify-content: space-evenly;
   }
   .firm-details > div > img {
-    height: 70px;
-    width: 70px;
+    height: auto;
+    width: 120px;
+  }
+  .firm-details > .firm-details-left > p {
+    font-size: 24px;
   }
   .about-horizon {
     width: 60%;
@@ -1013,15 +1018,18 @@ h1.beginning {
   .browse-services {
     width: 100%;
   }
-
   .browse,
   .services {
     gap: 5px;
   }
+  .browse > h3,
+  .services > h3 {
+    font-size: 22px;
+  }
 
   .browse a,
   .services a {
-    font-size: 14px;
+    font-size: 22px;
     font-weight: bold;
   }
 }
