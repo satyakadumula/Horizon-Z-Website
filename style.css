@@ -147,6 +147,9 @@ p.description {
   padding: 10px 20px;
   background-color: rgb(19, 19, 19, 0.5);
 }
+.arrow-sizer {
+  font-size: 1.4rem;
+}
 
 .upAndDown {
   animation-name: scrolldown;
@@ -213,6 +216,11 @@ h1.beginning {
   background-color: var(--gray);
   gap: 20px;
   transition: all 1s;
+}
+
+.sizerIcon {
+  font-size: 1.5rem;
+  color: var(--accent);
 }
 
 .box h4 {
@@ -691,38 +699,44 @@ h1.beginning {
     justify-content: center;
     width: 100px;
     height: auto;
-    margin: 10px;
   }
   label.logo {
     font-size: 40px;
     display: flex;
     align-items: center;
-    padding: 7% 1%;
     gap: 10px;
-  }
-  .logo h3 {
   }
   .checkbtn {
     display: inline-block;
     position: absolute;
     right: -20px;
   }
+  .bars-size {
+    font-size: 60px;
+    margin-right: 10px;
+    margin-top: 10px;
+  }
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    /* align-items: center;  */
+    padding-top: 20px;
+  }
   nav ul {
-    /* border: 2px solid green; */
     position: fixed;
     background-color: rgb(14, 9, 39);
     width: 60%;
     height: 100vh;
     z-index: 2;
-    padding: 0;
+    top: 0;
     display: none;
   }
   nav ul li {
     display: flex;
-    line-height: 40px;
+    line-height: 80px;
   }
   nav ul li a {
-    font-size: 15px;
+    font-size: 35px;
     width: 100%;
     text-align: center;
   }
@@ -731,11 +745,11 @@ h1.beginning {
   }
 
   .title {
-    font-size: 60px;
-    margin-top: 10px;
+    font-size: 120px;
+    margin-top: 260px;
   }
   p.description {
-    font-size: 20px;
+    font-size: 35px;
     font-weight: bold;
     color: white;
     text-align: center;
@@ -743,39 +757,81 @@ h1.beginning {
   .headline > h1 {
     color: white;
   }
-  /* features */
   .callout {
     backdrop-filter: blur(10px);
-    margin-top: 30px;
+    margin-top: 80px;
+    font-size: 40px;
     padding: 10px 60px;
   }
+  .arrow-sizer {
+    padding-top: 80px;
+    font-size: 3rem;
+  }
+  @keyframes scrolldown {
+    0%,
+    100% {
+      transform: translateY(80px);
+    }
+    50% {
+      transform: translateY(10px);
+    }
+  }
   h1.beginning {
-    font-size: 25px;
-    margin-top: 14rem;
+    font-size: 45px;
+    margin-top: 20rem;
     text-align: center;
   }
+  /* features */
   .features h1 {
-    font-size: 30px;
+    font-size: 70px;
   }
   .divider {
-    width: 30%;
+    width: 40%;
   }
   .boxes {
     flex-direction: column;
   }
   .box {
-    width: 300px;
+    width: 600px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+  }
+  .box:hover {
+    padding: 3rem 20px;
+  }
+  .box .sizerIcon {
+    font-size: 3rem;
+  }
+  .box h4 {
+    font-size: 30px;
+  }
+  .box p {
+    font-size: 30px;
   }
   /* destinations */
+  .destinations h1 {
+    font-size: 60px;
+  }
+  .destinations p {
+    font-size: 30px;
+  }
   .image-boxes {
     flex-direction: column;
   }
   .image-box {
-    width: 350px;
-    height: 300px;
+    border-radius: 20px;
+    width: 650px;
+    height: 380px;
   }
   .overlap-text {
-    top: 220px;
+    top: 280px;
+  }
+  .overlap-text h4 {
+    font-size: 34px;
+  }
+  .overlap-text p {
+    font-size: 28px;
   }
   /* about */
   .welcome {
@@ -786,10 +842,15 @@ h1.beginning {
     text-align: left;
   }
   .h1text {
-    font-size: 1.8rem;
+    font-size: 2.4rem;
+  }
+  .welcome-subtext p {
+    font-size: 24px;
   }
   .learnmore {
-    width: 100%;
+    width: 50%;
+    font-size: 2rem;
+    height: 4rem;
   }
   /* photo slideshow */
   .slide-photo {
@@ -797,12 +858,12 @@ h1.beginning {
     justify-content: center;
   }
   .slide-photo > div {
-    height: 300px;
-    width: 160px;
+    height: 600px;
+    width: 360px;
   }
   .slide-photo img {
-    height: 300px;
-    width: 160px;
+    height: 100%;
+    width: 100%;
     object-fit: cover;
     object-position: center;
   }
@@ -827,35 +888,47 @@ h1.beginning {
     flex-wrap: wrap;
     margin: 0;
     margin-top: 50px;
+    width: 80%;
   }
   .part1 {
-    width: 342px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
   }
   .beyond-travel-text {
-    justify-content: center;
+    text-align: right;
   }
   .beyond-travel-text h1 {
-    font-size: 40px;
+    font-size: 75px;
   }
   .beyond-travel-text h2 {
-    font-size: 1.2rem;
+    font-size: 2.4rem;
   }
   .beyond-horizons p {
-    font-size: 20px;
+    font-size: 24px;
   }
   .beyond-horizons button {
-    width: 100%;
+    width: 50%;
     padding: 0;
     margin: 10px 0;
   }
   .beyond-horizons img {
-    height: 190px;
+    height: 800px;
     width: 100%;
     margin-top: 40px;
   }
   /* pricing */
+  .pricing-header h1 {
+    font-size: 70px;
+  }
+  .pricing-header p {
+    font-size: 30px;
+  }
   .price-boxes {
     flex-direction: column;
+    width: 60%;
+    height: auto;
   }
   .price-box {
     padding: 1rem 1rem;
@@ -863,10 +936,10 @@ h1.beginning {
     border-radius: 30px;
   }
   .price-box h3 {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
   .price-box h4 {
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     color: var(--textGray);
   }
   .price-box hr {
@@ -881,15 +954,21 @@ h1.beginning {
   .basic-description-box {
     gap: 3px;
   }
+  .basic-description-title p {
+    font-size: 20px;
+  }
   .basic-description-text {
-    font-size: 14px;
+    font-size: 20px;
     font-weight: bold;
   }
   .know-more {
     text-align: center;
   }
+  .know-more h2 {
+    font-size: 45px;
+  }
   .know-more > button {
-    width: 90%;
+    width: 60%;
   }
   /*contact */
   .contact {
@@ -1030,6 +1109,9 @@ h1.beginning {
   }
   .box {
     width: 300px;
+  }
+  .box:hover {
+    padding: 3rem 20px;
   }
   /* destinations */
   .image-boxes {
