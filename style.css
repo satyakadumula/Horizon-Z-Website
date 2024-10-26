@@ -45,11 +45,11 @@ nav {
 
 .logo-img {
   height: 80px;
-  width: 300px;
+  width: 80px;
   margin-top: 5px;
   overflow: hidden;
   display: flex;
-  border-radius: 10px;
+  border-radius: 40%;
 }
 
 .logo-img > img {
@@ -699,11 +699,11 @@ h1.beginning {
 /* -------------------------- */
 /*---------Media Queries-----------------------------  */
 
-@media (min-width: 586px) and (max-width: 1080px) {
+@media (min-width: 618px) and (max-width: 1080px) {
   .logo-img {
     display: flex;
     justify-content: center;
-    width: 300px;
+    width: 100px;
     height: 100px;
   }
   label.logo {
@@ -1050,9 +1050,9 @@ h1.beginning {
 /* -------------------------- */
 /* ------------------------ */
 /* -------------------------- */
-@media (max-width: 479px) {
+@media (max-width: 618px) {
   .logo-img {
-    width: 100px;
+    width: 50px;
     height: 50px;
     margin: 10px;
   }
